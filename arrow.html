@@ -1,0 +1,23 @@
+<html>
+<body>
+
+
+<button id="btn">Click Me!</button>
+
+<p id="ar"></p>
+
+<script>
+var hello;
+
+hello = () => {
+  document.getElementById("ar").innerHTML += this;
+}
+
+window.addEventListener("load", hello);
+
+
+document.getElementById("btn").addEventListener("click", hello);
+</script>
+
+</body>
+</html>

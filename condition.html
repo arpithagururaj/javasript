@@ -1,0 +1,27 @@
+<html>
+<body>
+
+<input id= "age" value="25" />
+<p id= hi></p>
+<button  onclick="myFun()">info</button>
+
+<script>
+    function myFun(){
+let age = document.getElementById("age").value;
+let alowed = (age < 18) ? "to young":"to old";
+document.getElementById("hi").innerHTML = alowed;
+}
+
+
+</script>
+
+
+
+
+</body>
+
+
+
+
+
+</html>

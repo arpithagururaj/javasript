@@ -1,0 +1,19 @@
+<html>
+<body>
+
+
+<p id="fil"></p>
+
+<script>
+const numbers = [45, 46, 9, 16, 56,  25];
+const over18 = numbers.filter(myFunction);
+
+document.getElementById("fil").innerHTML = over18;
+
+function myFunction(value) {
+  return value > 18;
+}
+</script>
+
+</body>
+</html>

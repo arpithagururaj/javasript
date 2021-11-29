@@ -1,0 +1,31 @@
+<html>
+<body>
+
+<p id="sumy"> the sum of the number</p>
+
+<script>
+const number = [ 2, 8, 56, 79, 10];
+let sum = number.reduceRight(myFunction);
+
+document.getElementById("sumy").innerHTML= "sum =" + sum;
+
+function myFunction(total,value,index){
+return total + value;
+}
+
+
+
+
+
+
+</script>
+
+
+
+
+</body>
+
+
+
+
+</html>

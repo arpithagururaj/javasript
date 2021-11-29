@@ -1,0 +1,31 @@
+<html>
+<body>
+
+<p id="sumy"> the sum of the number</p>
+
+<script>
+const number = [ 2, 8, 56, 79, 10];
+let sumover18 = number.reduceRight(myFunction);
+
+document.getElementById("sumy").innerHTML= "some array over 18 is "+ sumover18;
+
+function myFunction(total,value,index){
+return  value > 18;
+}
+
+
+
+
+
+
+</script>
+
+
+
+
+</body>
+
+
+
+
+</html>
