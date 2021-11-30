@@ -1,0 +1,21 @@
+<html>
+<body>
+
+
+<p id="back"></p>
+
+<script>
+function myDisplayer(some) {
+  document.getElementById("back").innerHTML = some;
+}
+
+function myCalculator(num1, num2, myCallback) {
+  let sum = num1 + num2;
+  myCallback(sum);
+}
+
+myCalculator(50, 5, myDisplayer);
+</script>
+
+</body>
+</html>

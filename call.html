@@ -1,0 +1,26 @@
+<html>
+    <body>
+        <p id = "calling"></p>
+
+        <script>
+            const person = {
+              fullName : function(){
+                 return this.first + " " + this.last
+            }
+        }
+
+        const person1 = {
+            first : "armaan",
+            last : "malik"
+        }
+
+        const person2 = {
+            first : "nick",
+            last  : "jonas"
+        }
+            
+        document.getElementById("calling").innerHTML= person.fullName.call(person2);
+        
+        </script>
+    </body>
+</html>

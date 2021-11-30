@@ -1,0 +1,19 @@
+<html>
+<body>
+
+
+<p id="func"></p>
+
+<script>
+function sumAll() {
+  let sum = 0;
+  for(let i = 0; i < arguments.length; i++) {
+    sum += arguments[i];
+  }
+  return sum;
+}
+document.getElementById("func").innerHTML = sumAll(1, 50, 49, 25, 30, 88);
+</script>
+
+</body>
+</html>

@@ -1,0 +1,21 @@
+<html>
+<body>
+
+
+<p id="mapping"></p>
+
+<script>
+const fruits = new Map([
+  ["apples", 500],
+  ["bananas", 3000],
+  ["oranges", 205]
+]);
+
+fruits.set("apples", 2500);
+
+document.getElementById("mapping").innerHTML = fruits.get("apples");
+</script>
+
+</body>
+</html>
+
