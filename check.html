@@ -1,0 +1,28 @@
+<html>
+    <body>
+       
+        <input id="p2" type="number" min="100" />
+        <button onclick="myFunction()" >ok</button>
+        <p id="p1"></p>
+        <script>
+         function myFunction(){
+             let text;
+             if(document.getElementById("p2").validity.rangeUnderflow){
+                 text = "value too small"
+             }else {
+                 text = "ok input"
+             }
+
+                 document.getElementById("p1").innerHTML= text;
+
+             }
+           
+         
+
+         
+        
+
+
+        </script>
+    </body>
+</html>
