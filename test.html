@@ -1,0 +1,28 @@
+<html>
+    <body>
+
+  <button onclick="myFunction()">haii click me!</button>      
+<p id="i"></p>
+
+<script>
+    function myFunction(){
+        var n = prompt("Please enter your number", " 0 ");
+//let n = 5;
+let string = "";
+
+for (let i = 1; i <= n; i++) {
+
+  for (let j = 1; j <= n - i; j++) {
+    string += " " 
+  }
+ 
+  for (let k = 0; k < 2 * i - 1; k++) {
+    string += "*"
+  }
+  string += "<br>";
+}
+document.getElementById("i").innerHTML= string;
+}
+</script>
+</body>
+</html>

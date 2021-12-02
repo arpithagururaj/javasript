@@ -1,0 +1,42 @@
+<html>
+    <body>
+        
+        <button onclick="getlocation()">click to get location</button>
+        <p id = "p1"></p>
+        <script>
+
+            x = document.getElementById("p1");
+
+            function getlocation(){
+                if(navigator.geolocation){
+                    navigator.geolocation.getCurrentPosition(showPosition,showError);
+                }else{
+                    x.innerHTML = "Browser does not support"
+                }
+            }
+
+            function showPosition(position) {
+                x.innerHTML= "lattitude: " + position.coords.latitude + "</br> longitude: " + position.coords.longitude;
+
+            }
+
+            function showError(error){
+                switch (error.code) {
+                    case error.PERMISSION_DENIED:
+                    x.innerHTML="user is unavailable"
+                    break;
+
+                    case error.POSITION_UNAVAILABLE:
+                        x.innerHTML="user denied"
+                        break;
+
+                    
+
+                }
+            }
+           
+
+            
+        </script>
+    </body>
+</html>
